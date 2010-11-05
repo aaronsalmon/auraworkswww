@@ -1,0 +1,664 @@
+/*----------------------------------------
+Initial reset hottness
+-------------------------------------------*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,img {
+	border: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+caption,th {
+	text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,q:after {
+	content: '';
+}
+
+abbr,acronym {
+	border: 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/*----------------------------------------
+Structure
+-------------------------------------------*/
+
+html {
+	min-height: 101%;
+}
+
+body {
+	margin-top: 30px;
+	background: #e2e1d9 url(../images/bgBody.jpg) top left repeat;
+	font-size: 62.5%;
+	color: #31332b;
+	padding: 0 1em;
+}
+
+#mainWrapper {
+	background: url(../images/mainBG.gif) top center repeat-y #e4e4db;
+	width: 1022px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+#top {
+	background: url(../images/header.gif) top center no-repeat #e4e4db;
+	height: 85px;
+	width: 1022px;
+}
+
+/* headerHolidays.gif */
+
+#top h1 {
+	height: 85px;
+	width: 262px;
+	float: left;
+}
+
+
+#mainWrapper h1 span {
+	display: inline-table;
+	text-indent: -9999px;
+}
+
+#header {
+	padding-top: 1.5em;
+	margin-bottom: 2em;
+}
+
+#content {
+	padding: 20px 26px 0px
+}
+
+#colLeft {
+	width: 338px;
+	margin-bottom: 30px;
+}
+
+#colRight {
+	width: 338px;
+	float: right;
+	margin-bottom: 30px;
+}
+
+#colMain {
+	width: 706px;
+	margin-bottom: 30px;
+}
+
+/*----------------------------------------
+Main Nav
+-------------------------------------------*/
+
+ul.topNav {
+	float: right;
+	padding: 15px 15px 0 0;
+	height: 50px;
+}
+
+ul.topNav li {
+	background: none;
+	list-style: none;
+	float: left;
+	padding: 10px;
+}
+
+ul.topNav li a span {
+	text-indent: -9999px;
+	display: inline-table;
+}
+
+ul.topNav li a {
+	background: url(../images/topNav.png) left top no-repeat;
+	display: block;
+}
+
+ul.topNav li.home a {
+	height: 40px;
+	width: 40px;
+}
+
+ul.topNav li.home a:hover {
+	background-position: left -40px;
+}
+
+ul.topNav li.home a.active {
+	background-position: left -80px;
+}
+
+ul.topNav li.info a {
+	background-position: -54px 0px;
+	height: 40px;
+	width: 144px;
+}
+
+ul.topNav li.info a:hover {
+	background-position: -54px -40px;
+}
+
+ul.topNav li.info a.active {
+	background-position: -54px -80px;
+}
+
+ul.topNav li.projects a {
+	background-position: -212px 0px;
+	height: 40px;
+	width: 214px;
+}
+
+ul.topNav li.projects a:hover {
+	background-position: -212px -40px;
+}
+
+ul.topNav li.projects a.active {
+	background-position: -212px -80px;
+}
+
+/*----------------------------------------
+Stylez
+-------------------------------------------*/
+
+ul.facts {
+	margin-top: 14px;
+}
+
+#colMain dl {
+	padding-bottom:30px;
+}
+
+#colMain dd {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+#colMain dt {
+	/* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75); */
+	background-color:#EEEEEE;
+	cursor:pointer;
+	font-size:13px;
+	height:15px;
+	margin:15px 0 10px;
+	padding:9px 11px;
+}
+
+#colMain dt:hover {
+	background-color: #e4e4db;
+	color: #000;
+}
+
+#colMain dt span{
+	float: left;
+}
+
+#colMain dt em{
+	float: right;
+	padding-left: 100px;
+	font-size: 10px;
+	padding-top: 1px;
+	font-style: italic;
+	color: #595c51;
+}
+
+#colMain dd:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: left;
+	visibility: hidden;
+}
+
+#colMain dd {
+	height: 1%;
+}
+
+#colMain dd {
+	display: none;
+}
+
+#colMain img {
+	margin: 4px;
+	border: 1px solid #ddd;
+	float: left;
+}
+
+#side {
+	background: transparent url(../images/sideBG.gif) repeat-y scroll right center;
+	border-bottom: 1px solid #EFEFEF;
+	float: right;
+	margin: 12px 0 30px 33px;
+	overflow: hidden;
+	padding: 0 0 20px 10px;
+	width: 214px;
+}
+
+#sideCol #side {
+	background: transparent url(../images/sideBG.gif) repeat-y scroll right center;
+	border-bottom: 1px solid #EFEFEF;
+	margin: 35px 0 30px 33px;
+	overflow: hidden;
+	padding: 0 0 20px 10px;
+	width: 214px;
+}
+
+#sideCol {
+	float: right;
+	margin: 12px 0 30px 33px;
+	padding: 0 0 20px 10px;
+	width: 214px;
+}
+
+#footer {
+	clear: both;
+	color: #595c51;
+	font-size: .9em;
+	background: url(../images/footerBG.gif) bottom left no-repeat;
+	padding: 26px 26px 20px 26px;
+}
+
+.disclaimer {
+	color: #595c51;
+	font-size: .9em;
+	padding: 2px 0px;
+}
+
+#login {
+	display: block;
+	float: right;
+	width: 150px;
+	text-align: right;
+	padding: 24px 2px 0px 0px;
+}
+
+h2 {
+	border-bottom: 1px solid #e4e4db;
+	font-size: 3em;
+	line-height: 1.2em;
+}
+
+#content h2 {
+	margin-bottom: 12px;
+	font-size: 2.4em;
+	line-height: 2.1em;
+	background: none;
+	height: auto;
+}
+
+h3 {
+	font-size: 1.7em;
+	padding: 10px 0px 15px;
+	color: #d97c19;
+}
+
+h4 {
+	border-bottom: 1px solid #e4e4db;
+	line-height: 2.1em;
+	font-size: 1.7em;
+	margin-bottom: 12px;
+}
+
+#side #twitter_div h3 {
+	font-family: Georgia,Times,serif;
+	background: url(../images/sideHeader.gif) 31px 0px no-repeat;
+	border-bottom: none;
+	height: 48px;
+	padding: 12px 0px 0px 0px;
+}
+
+h3 a {
+	font-size:12px;
+	font-style:italic;
+}
+
+h3 a:hover {
+	color: #d97c19;
+	text-decoration: none;
+}
+
+#side #twitter_div h3 a {
+	height: 42px;
+	width: 214px;
+	margin-right: 13px;
+	display: block;
+	color: #31332b;
+	font-size:17px;
+	text-decoration: none;
+}
+
+p,
+ul li {
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+
+
+ul {
+	margin-left: 14px;
+}
+
+ul li {
+	padding: 6px 0px 0px 19px;
+	background: url(../images/lilCheck.gif) 2px 9px no-repeat;
+}
+
+ul li.head {
+	background: none;
+	margin-left: 1px;
+	list-style-type: circle;
+	font-weight: bold;
+	padding: 25px 0px 0px 0px;
+}
+
+ul li.note {
+	background: none;
+	margin-left: 1px;
+	list-style-type: circle;
+	font-weight: normal;
+	padding: 25px 0px 0px 0px;
+}
+
+ul li.desc {
+	background: none;
+	margin-left: 0px;
+	padding: 10px 0px 5px 1px;
+}
+
+ul li.more {
+	background: none;
+	margin-left: 0px;
+	padding: 25px 0px 20px 1px;
+}
+
+ul li.more span {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+ul li.lately {
+	padding: 16px 0px 0px 18px;
+	background: url(../images/lilArrow.gif) 2px 20px no-repeat;
+}
+
+ul li.screen {
+	padding: 6px 0px 0px 18px;
+	background: none;
+}
+
+ul.quote li span {
+	padding-left: 6px;
+	font-style: italic;
+	color: #595c51;
+}
+
+ul.quote li{
+	padding-bottom: 15px;
+}
+
+#sideCol ul.quote{
+	margin-left: 0px;
+}
+
+#sideCol p{
+	padding-bottom: 12px;
+}
+
+
+
+blockquote, em, h1, h2, h4, i {
+	font-family: Georgia,Times,serif;
+}
+
+h5, h6, body {
+	font-family: Lucida Grande,Lucida Sans,Helvetica,Georgia,Arial;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: #bf6b00;
+	outline-style: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+abbr {
+	border-bottom: 1px dotted #aaa9a5;
+}
+
+a.url,
+a:link.url,
+a:visited.url,
+a:active.url,
+a:hover.url,
+.extra {
+	display: none;
+}
+
+div.vcard ul li {
+	background: none;
+}
+
+#elsewhere {
+	width: 80px;
+	float: right;
+	padding: 0px 0px 0px 0px;
+}
+
+#twitter_div ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#twitter_div ul li {
+	padding: 0px 9px 15px 0px;
+	background: none;
+	color: #595c51;
+}
+
+h2.portfolio {
+	clear: both;
+}
+
+.video #center {
+	padding: 20px 0px;
+}
+
+.video #center .hvlog p {
+	padding: 20px 0px;
+}
+
+
+#elsewhere ul li {
+	float: left;
+	width: 23px;
+	margin: 4px;
+	padding: 0px;
+}
+
+#elsewhere ul li.head {
+	float: left;
+	width: 80px;
+	margin: 4px;
+	padding: 20px 0px 0px 0px;
+}
+
+#elsewhere ul li a {
+	display: block;
+	height: 23px;
+	width: 23px;
+}
+
+#elsewhere ul li a span {
+	display: inline-table;
+	text-indent: -9999px;
+}
+
+#elsewhere ul li.twitter {
+	background: url(../images/iconServicetwitter.gif) no-repeat 0px 0px;
+}
+
+#elsewhere ul li.claimid {
+	background: url(../images/iconServiceclaimid.gif) no-repeat 0px 0px;
+}
+
+#elsewhere ul li.linkedin {
+	background: url(../images/iconServicelinkedin.gif) no-repeat 0px 0px;
+}
+
+#elsewhere ul li.facebook {
+	background: url(../images/iconServiceFacebook.gif) no-repeat 0px 0px;
+}
+
+#elsewhere ul li.myspace {
+	background: url(../images/iconServicemyspace.gif) no-repeat 0px 0px;
+}
+
+#elsewhere ul li.delicious {
+	background: url(../images/iconServicedelicious.gif) no-repeat 0px 0px;
+}
+
+#elsewhere ul li.lastfm {
+	background: url(../images/iconServicelastfm.gif) no-repeat 0px 0px;
+}
+
+#elsewhere ul li.goodreads {
+	background: url(../images/iconServicegoodreads.gif) no-repeat 0px 0px;
+}
+
+#elsewhere ul li.iusethis {
+	background: url(../images/iconServiceiusethis.gif) no-repeat 0px 0px;
+}
+
+#ie6sad {
+    display: block;
+    padding: 9px;
+    background-color: #ffffe0;
+    margin:-30px -10px 10px;
+}
+
+/*----------------------------------------
+Global Fluff
+-------------------------------------------*/
+
+.amp {
+	font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+	font-style: italic;
+	font-weight: normal;
+	line-height: inherit;
+}
+
+.me {
+	border: 2px solid #D6D6CD;
+	float: right;
+	margin: 0 0 14px 4px;
+}
+
+em {
+	font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+	font-style: italic;
+	font-weight: normal;
+	line-height: inherit;
+}
+
+.external {
+	background: transparent url(../images/externalLink.gif) no-repeat scroll right center;
+	padding-right: 14px;
+}
+
+#footer p.copyright {
+	border-top: 1px solid #eee;
+	padding: 16px 0px 10px 34px;
+	background: url(../images/footerLogo.gif) no-repeat 0px 12px;
+}
+
+.top {
+	padding-top:8px;
+}
+
+
+ 
+/**
+* Grid
+*/
+#grid{
+    /* Dimensions - same width as your grid with gutters */
+    width: 1022px;
+ 
+    /* Grid (left-aligned)
+position: absolute;
+top: 0;
+left: 0;
+*/
+ 
+    /* Grid (centered) */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -510px;
+ 
+}
+ 
+/**
+* Horizontal grid lines, defined by your base line height
+*
+* Remember, the CSS properties that define the box model:
+* visible height = height + borders + margins + padding
+*/
+#grid .horiz{
+    /* 20px line height */
+    height: 19px;
+    border-bottom: 1px dotted #aaa;
+    margin: 0;
+    padding: 0;
+}
+/**
+* Vertical grid lines usually just borders but you could style them any way you choose.
+*/
+#grid .vert {
+border-right:1px solid red;
+border-left:1px solid red;
+}
+
+.the_likes {
+	padding:18px 0 0;
+	float: right;
+}
+.twitter-share-button {
+	height: 65px !important;
+	width: 61px !important;
+}

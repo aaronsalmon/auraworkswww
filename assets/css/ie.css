@@ -1,0 +1,14 @@
+/* sad IE likes the following */
+
+button {
+	width: auto;
+	overflow: visible;
+}
+
+button span {
+	margin-top: 1px;
+}
+
+#sideCol #side {
+	margin:35px 0 30px -20px;
+}

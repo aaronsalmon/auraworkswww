@@ -1,0 +1,28 @@
+# robots.txt for http://www.auraworks.com
+
+User-agent: WX_mail/2.000
+Disallow: /
+
+User-agent: emailCollector
+Disallow: /
+
+User-agent: WebemailExtractor
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+User-agent: Gigabot
+Disallow: /
+
+User-agent: WhoWhere
+Disallow: /
+
+User-agent: Roverbot
+Disallow: /
+
+User-agent: ActiveAgent
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
